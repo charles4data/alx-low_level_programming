@@ -7,4 +7,6 @@ The tasks are listed below with a short description what each script does.
 *Task 1-compiler:* 
 + The script compiles a C file but does not link.
 ----------------------------------------
-
+*Task 2-assembler:*
++ The script generates the assembly code of a C code and save it in an output file.
+------------------------------------------
