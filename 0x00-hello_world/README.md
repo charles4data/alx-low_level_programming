@@ -19,6 +19,10 @@ The tasks are listed below with a short description what each script does.
 ------------------------------------------------
 *5-printf.c:* 
 + The program prints exactly "with proper grammar, but the outcome is a piece of art," followed by a new line. On;y printf allowed.
+-----------------------------------------
+*6-size.c:* 
++ The program prints the size of various types on the computer it is compiled and run on. The programe needs to return 0. Should be tested for size32 and size64 bits. 
+-----------------------------------------------------
 *Task 100-intel:* 
 + The script generates the assembly code (Intel syntax) of a C code and save it in an output file. File name = $CFILE, and output file should be named as the C file, but with an extension of .s instead of .c
 ---------------------------------------------------
