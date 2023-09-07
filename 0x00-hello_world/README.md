@@ -13,6 +13,7 @@ The tasks are listed below with a short description what each script does.
 ------------------------------------------
 *Task 3-name:*
 + The script compiles a C file and creates an executable named cisfun
------------------------------------------------
+----------------------------------------------
 *Task 4-puts.c:*
-+ This is a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
++ The program prints exactly "Programming is like building a multilingual puzzle", followed by a new line. Using printf not allowed
+------------------------------------------------
