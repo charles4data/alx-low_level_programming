@@ -19,3 +19,6 @@ The tasks are listed below with a short description what each script does.
 ------------------------------------------------
 *5-printf.c:* 
 + The program prints exactly "with proper grammar, but the outcome is a piece of art," followed by a new line. On;y printf allowed.
+*Task 100-intel:* 
++ The script generates the assembly code (Intel syntax) of a C code and save it in an output file. File name = $CFILE, and output file should be named as the C file, but with an extension of .s instead of .c
+---------------------------------------------------
