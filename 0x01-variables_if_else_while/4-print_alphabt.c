@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	char letter = 'a';
+        char letter = 'a';
 
-	while (letter <= 'z')
-	{
-		if (letter == 'q' || letter == 'e')
-			continue;
-		else
-		{
-			putchar(letter);
-		}
-	letter++;
-	}
+        while (letter <= 'z')
+        {
+                if (letter != 'q' && letter != 'e')
+                        putchar(letter);
+                else
+                {
+                        continue;
+                }
+        	letter++;
+        }
 
-	putchar('\n');
-	return (0);
+        putchar('\n');
+        return (0);
 }
