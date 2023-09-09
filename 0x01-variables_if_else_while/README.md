@@ -14,3 +14,6 @@
 *Task 3-print_alphabets.c:*
 + The program prints the alphabet in lowercase, and then in uppercase, followed by a new line. I could only use the putchar function (every other function (printf, puts, etc…) was forbidden). I was required to put all my code in the main function and only use putchar three times.
 ---------------------------------------------------
+*Task 4-print_alphabt.c:*
++ The program prints the alphabet in lowercase, followed by a new line. It print all the letters except q and e. Like before, I was required to use only the putchar function (every other function (printf, puts, etc…) was forbidden). The instructions also suggested that I should put my code inside the main function and only use putchar twice.
+---------------------------------------------------------
