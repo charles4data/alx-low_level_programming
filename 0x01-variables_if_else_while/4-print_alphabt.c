@@ -8,12 +8,12 @@
 
 int main(void)
 {
-        char alfa = 'a';
-
-        while (alfa <= 'z')
-        {
-                if (alfa != 'q' && alfa != 'e')
-                        putchar(alfa);
+	char alfa = 'a';
+	
+	while (alfa <= 'z')
+	{
+		if (alfa != 'q' && alfa != 'e')
+			putchar(alfa);
                 else
                         continue;
                 alfa++;
