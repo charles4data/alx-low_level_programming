@@ -8,15 +8,16 @@
 
 int main(void)
 {
-       char letter = 'a';
+        char alfa = 'a';
 
-       while (letter <= 'z')
-       {
-               if (letter != 'q' && letter != 'e')
-		       putchar(letter);
-        
-        	letter++;
-       }
-       putchar('\n');
-       return (0);
+        while (alfa <= 'z')
+        {
+                if (alfa != 'q' && alfa != 'e')
+                        putchar(alfa);
+                else
+                        continue;
+                alfa++;
+        }
+        putchar('\n');
+        return (0);
 }
