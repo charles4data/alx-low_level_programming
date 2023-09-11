@@ -12,7 +12,7 @@ int main(void)
 
 	for (dgt10 = 0; dgt10 <= 9; dgt10++)
 	{
-		putchar(dgt10);
+		putchar(dgt10 + '0');
 	}
 	putchar('\n');
 	return (0);
