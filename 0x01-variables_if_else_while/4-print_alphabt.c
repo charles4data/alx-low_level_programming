@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet
+ * main - main function starts here
  *
- * Return: Always 0 (Success)
+ * Return: Always0 0 (Success)
  */
 
 int main(void)
 {
-	char alfa = 'a';
-	
-	while (alfa <= 'z')
+	char chr;
+
+	for (chr = 'a'; chr <= 'z'; chr++)
 	{
-		if (alfa != 'q' && alfa != 'e')
-			putchar(alfa);
-                else
-                        continue;
-                alfa++;
-        }
-        putchar('\n');
-        return (0);
+		if (chr != 'q' && chr != 'e')
+		{
+			putchar(chr);
+		}
+		else
+		{
+			continue;
+		}
+	}
+	putchar('\n');
+	return (0);
 }
