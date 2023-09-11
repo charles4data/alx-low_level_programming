@@ -17,3 +17,6 @@
 *Task 4-print_alphabt.c:*
 + The program prints the alphabet in lowercase, followed by a new line. It print all the letters except q and e. Like before, I was required to use only the putchar function (every other function (printf, puts, etc…) was forbidden). The instructions also suggested that I should put my code inside the main function and only use putchar twice.
 ---------------------------------------------------------
+*Task 5-print_numbers.c:*
++ The program prints all single digit numbers of base 10 starting from 0, followed by a new line. All my code was to be in the main function.
+------------------------------------------------------
