@@ -11,7 +11,7 @@ int main(void)
 	char ch10;
 	char af6;
 
-	for (ch10 = '0'; ch10 <= 9; ch10++)
+	for (ch10 = '0'; ch10 <= '9'; ch10++)
 	{
 		putchar(ch10);
 	}
