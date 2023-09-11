@@ -15,6 +15,7 @@ int main(void)
 		printf("%d", dg10);
 		dg10++;
 	}
+	printf("\n");
 	return (0);
 }
 
