@@ -20,3 +20,6 @@
 *Task 5-print_numbers.c:*
 + The program prints all single digit numbers of base 10 starting from 0, followed by a new line. All my code was to be in the main function.
 ------------------------------------------------------
+*Task 6-print_numberz.c:*
++ The program prints all single digit numbers of base 10 starting from 0, followed by a new line.The requirements did not allow the use any variable of type char. I could only use the putchar function (every other function (printf, puts, etc…) was forbidden). Lasty, I could only use putchar twice in my code and all the code was to be in the main function.
+-------------------------------------------------------------
