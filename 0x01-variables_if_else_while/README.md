@@ -31,4 +31,7 @@
 -----------------------------
 *Task 9-print_comb.c:*
 + The program prints all possible combinations of single-digit numbers. Numbers must be separated by `,`, followed by a space ` `. Numbers should be printed in ascending order. The instructions requred that I only use the putchar function (every other function (printf, puts, etc…) was forbidden). All my code is in the main function. I could only use putchar four times maximum in my code and I was not allowed to use any variable of type char.`
---------------------------------- 
+---------------------------------
+*Task 100-print_comb3.c:*
++ The program prints all possible different combinations of two digits. Numbers must be separated by ,, followed by a space. The two digits must be different. 01 and 10 are considered the same combination of the two digits 0 and 1. Print only the smallest combination of two digits. Numbers should be printed in ascending order, with two digits. You can only use the putchar function (every other function (printf, puts, etc…) is forbidden). You can only use putchar five times maximum in your code. You are not allowed to use any variable of type char. All your code should be in the main function.
+------------------------------- 
