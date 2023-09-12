@@ -14,13 +14,17 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char lw;
-
-	for (lw = 'a'; lw <= 'z'; lw++)
+	int tms;
+	for (tms = 1; tms <= 10; tms++)
 	{
-		putchar(lw);
+		char alfa;
+		for (alfa = 'a'; alfa <= 'z'; alfa++)
+		{
+			putchar(alfa);
+		}
 	}
 	putchar('\n');
+
 }
