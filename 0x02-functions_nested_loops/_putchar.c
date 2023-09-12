@@ -14,7 +14,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char lw;
 
@@ -23,5 +23,4 @@ int print_alphabet(void)
 		putchar(lw);
 	}
 	putchar('\n');
-	return (0);
 }
