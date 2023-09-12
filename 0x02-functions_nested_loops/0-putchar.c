@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - main function starts here
@@ -10,7 +10,15 @@
 
 int main(void)
 {
-	char val[9] = "_putchar";
-	printf("%s\n", val);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }
