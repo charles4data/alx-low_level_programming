@@ -4,4 +4,6 @@ This section focuses on tasks related to functions and nested loops in c program
 ## Task 1
 + `0-putchar.c:` This program prints `_putchar`, followed by a noew line and returns  0.
 --------------------------------------------
- 
+## Task 2
++ `1-alphabet.c:` This function prints the alphabet, in lowercase, followed by a newline.
+----------------------------------------------- 
