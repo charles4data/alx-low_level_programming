@@ -4,7 +4,7 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @n: parameter to ve checked
+ * @n: parameter to be checked
  * Return: returns the value of the last digit.
  */
 
