@@ -28,7 +28,7 @@ This section focuses on tasks related to functions and nested loops in c program
 ## Task 9
 + **9-times_table.c:** The function prints the `9 times table`, starting with `0`. **Prototype:** `void times_table(void);`
 -----------------------------------------
-##Task 10
+## Task 10
 + **10-add.c:** The function adds two integers `a` and `b` and returns a result. **Prototype:** `int add(int, int);`
 --------------------------------------------
 ## Task 11
