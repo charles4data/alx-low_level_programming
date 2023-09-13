@@ -9,18 +9,16 @@
 
 void times_table(void)
 {
-	int rows = 10;
-	int cols = 10;
 	int i;
 	int j;
 
-	for (i = 0; i < rows; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < cols; j++)
+		for (j = 0; j < 10; j++)
 		{
-			_putchar(i * j + '0');
+			putchar(i * j + '0');
 
-			if (j < cols -1)
+			if (j < 9)
 			{
 				putchar(',');
 				putchar(' ');
