@@ -3,7 +3,7 @@
 
 /**
  * add - adds two integers and returns the result
- * @a: first parameter to be added 
+ * @a: first parameter to be added
  * @b: second parameters to be added
  * Return: Return the result of a and b.
  */
