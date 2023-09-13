@@ -3,8 +3,9 @@
 
 /**
  * add - adds two integers and returns the result
- * @a, @b: parameters to be added
- * Return: Return the result of a and b
+ * @a: first parameter to be added 
+ * @b: second parameters to be added
+ * Return: Return the result of a and b.
  */
 
 int add(int a, int b)
