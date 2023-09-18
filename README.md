@@ -16,3 +16,5 @@ Tasks in this repository relate to final solutions for the completed tasks for a
 ## 0x04-more_functions_nested_loops Tasks
 + This is a continuation of the previous tasks of the same name. We did some advanced practice on functions and nested loops in c
 ---------------------------------------------------------
+## 0x05. C - Pointers, arrays and strings
++ Here, I worked on tasks related to the Pointers, strings, and arrays, especially how to manipulate them
