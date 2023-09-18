@@ -3,8 +3,8 @@
 
 /**
  * swap_int - the function swap the value of integers
- * @*a: - First integer
- * @*b: - Second integer
+ * @a: First parameter
+ * @b: Second parameter
  * Return: Always 0.
  */
 
