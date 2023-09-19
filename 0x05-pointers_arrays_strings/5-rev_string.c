@@ -20,7 +20,7 @@ void rev_string(char *s)
 		char temp = *start;
 		*start = *end;
 		*end = temp;
-
+		
 		start++;
 		end--;
 	}
