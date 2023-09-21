@@ -18,3 +18,7 @@ Tasks in this repository relate to final solutions for the completed tasks for a
 ---------------------------------------------------------
 ## 0x05. C - Pointers, arrays and strings
 + Here, I worked on tasks related to the Pointers, strings, and arrays, especially how to manipulate them
+---------------------------------------------------------
+## 0x06. C - More pointers, arrays and strings
++ Additional tasks on pointers, strings, and arrays, especially how to manipulate and work with them.
+-------------------------------------------------
