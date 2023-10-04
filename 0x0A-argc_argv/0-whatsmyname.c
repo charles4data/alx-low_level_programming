@@ -2,11 +2,12 @@
 
 /**
  * main - prints the programme name
- *
+ * @argc: argument count
+ * @argv: Arguments strings array
  * Return: Always 0.
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
