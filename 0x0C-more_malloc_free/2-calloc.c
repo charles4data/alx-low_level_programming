@@ -12,7 +12,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p = calloc(nmemb, nmemb * size);
+	void *p = calloc(nmemb, size);
 
 	memset(p, 0, nmemb * size);
 
