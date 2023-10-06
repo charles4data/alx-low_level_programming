@@ -12,20 +12,24 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p = calloc(nmemb, size);
-
-	memset(p, 0, nmemb * size);
+	int total_size;
+	void *p;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
+
+	total_size = nmemb * size;
+
+	p = calloc(nmemb, size);
+
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		return (p);
-	}
+
+	memset(p, 0, total_size);
+
+	return (p);
 }
