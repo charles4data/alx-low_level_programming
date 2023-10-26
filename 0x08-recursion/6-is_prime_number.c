@@ -2,10 +2,37 @@
 #include <stdio.h>
 
 /**
-*is_prime_number - checks if prime
+*is_prime_recursive - checks if prime
 * @n: number to check
 * Return: 1 - yes, 0 - no.
 */
+
+int is_prime_recursive(int n, int divisor)
+{
+	if (n <= 1)
+	{
+		return (0);
+	}
+	else if (divisor == 1)
+	{
+		return (1);
+	}
+	else
+	{
+		if (n % divisor == 0)
+		{
+			return (0);
+		}
+		return (is_prime_recursive(n, divisor - 1));
+	}
+}
+
+
+/**
+ * is_prime_number - checks whether prime
+ * @n: parameter,
+ * Return: prime number
+ */
 
 int is_prime_number(int n)
 {
@@ -13,25 +40,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	else if (n <= 3)
-	{
-		return (1);
-	}
-	else if (n % 2 == 0 || n % 3 == 0)
-	{
-		return (0);
-	}
-	else
-	{
-		int i;
-
-		for (i = 5; i * i <= n; i += 6)
-		{
-			if (n % i == 0 || n % (i + 2) == 0)
-			{
-				return (0);
-			}
-		}
-		return (1);
-	}
+	return is_prime_recursive(n, n / 2);
 }
