@@ -4,6 +4,7 @@
 /**
 *is_prime_recursive - checks if prime
 * @n: number to check
+* @divisor: parameter 2
 * Return: 1 - yes, 0 - no.
 */
 
@@ -40,5 +41,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return is_prime_recursive(n, n / 2);
+	return (is_prime_recursive(n, n / 2));
 }
