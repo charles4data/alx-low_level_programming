@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * main - multiplies 2 numbers
+ * multiply - multiplies 2 numbers
  * @argc: argument count,
  * @argv: argument array,
  * Return: 0.
  */
 
-int main(int argc, char *argv[])
+int multiply(int argc, char *argv[])
 {
 	if (argc >= 3)
 	{
