@@ -14,18 +14,22 @@ char *str_concat(char *s1, char *s2)
 {
 	char *s1s2;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "NULL";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "NULL";
 	}
 
 	s1s2 = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 
-	if (s1s2 != NULL)
+	if (s1s2 == NULL)
 	{
-		strcpy(s1s2, s1);
-
-		strcat(s1s2, s2);
+		return (NULL);
 	}
+	strcpy(s1s2, s1);
+	strcat(s1s2, s2);
 	return (s1s2);
 }
