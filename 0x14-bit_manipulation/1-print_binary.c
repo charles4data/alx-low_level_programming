@@ -10,35 +10,10 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int power;
-
-	if (n == 0)
+	if (n > 1)
 	{
-		printf("0");
-		return;
+		print_binary(n >> 1);
 	}
-
-	power = 1;
-
-	while (power <= n)
-	{
-		power = power << 1;
-	}
-
-	power = power >> 1;
-
-	while (power > 0)
-	{
-		if (power >= 1)
-		{
-			printf("1");
-			n = n - power;
-		}
-		else
-		{
-			printf("0");
-		}
-		power = power >> 1;
-	}
+	_putchar((n & 1) + '0');
 
 }
