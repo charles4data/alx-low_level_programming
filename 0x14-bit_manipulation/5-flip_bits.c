@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * flip_bits - returns the number of bits to be flipped to get from one number to another
+ * flip_bits - returns the number of bits to be flipped...
+ * ...to get from one number to another.
  * @n: integer to flip,
  * @m: integers to flip,
  * Return: number of bits.
