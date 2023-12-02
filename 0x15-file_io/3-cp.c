@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	{
 		error_exit(97, "Usage: %s file_from file_to\n", argv[0]);
 	}
-	fd_from = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+	fd_from = open(file_from, O_RDONLY);
 	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
 	if (fd_to == -1)
