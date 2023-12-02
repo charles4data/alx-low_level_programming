@@ -15,8 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_desc;
 	char *buffer;
-	ssize_t b_read;
-	ssize_t b_written;
+	ssize_t b_read, b_written;
 
 
 	if (filename == NULL)
@@ -29,16 +28,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		
 		if (file_desc == -1)
 		{
-			perror("Error opening file");
 			return (0);
 		}
-
 		else
 		{
 			buffer = malloc(letters);
 			if (buffer == NULL)
 			{
-				perror("Could not allocate memory");
 				close(file_desc);
 				return (0);
 			}
@@ -47,7 +43,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 				b_read = read(file_desc, buffer, letters);
 				if (b_read == -1)
 				{
-					perror("Could not read the file");
 					close(file_desc);
 					free(buffer);
 					return (0);
@@ -57,17 +52,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 					b_written = write(STDOUT_FILENO, buffer, b_read);
 					if (b_written == -1 || b_written != b_read)
 					{
-						perror("Could not write to stdout\n");
 						close(file_desc);
 						free(buffer);
 						return (0);
 					}
+					return (b_written);
 				}
 			}
 
 		}
 	}
-	close(file_desc);
-	free(buffer);
-	return (b_written);
 }
