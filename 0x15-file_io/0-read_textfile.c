@@ -22,44 +22,37 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	else
-	{
-		file_desc = open(filename, O_RDONLY);
+	file_desc = open(filename, O_RDONLY);
 		
-		if (file_desc == -1)
-		{
-			return (0);
-		}
-		else
-		{
-			buffer = malloc(letters);
-			if (buffer == NULL)
-			{
-				close(file_desc);
-				return (0);
-			}
-			else
-			{
-				b_read = read(file_desc, buffer, letters);
-				if (b_read == -1)
-				{
-					close(file_desc);
-					free(buffer);
-					return (0);
-				}
-				else
-				{
-					b_written = write(STDOUT_FILENO, buffer, b_read);
-					if (b_written == -1 || b_written != b_read)
-					{
-						close(file_desc);
-						free(buffer);
-						return (0);
-					}
-					return (b_written);
-				}
-			}
-
-		}
+	if (file_desc == -1)
+	{
+		return (0);
 	}
+	buffer = malloc(letters);
+	
+	if (buffer == NULL)
+	{
+		close(file_desc);
+		free(buffer);
+		return (0);
+	}
+	b_read = read(file_desc, buffer, letters);
+	
+	if (b_read == -1)
+	{
+		close(file_desc);
+		free(buffer);
+		return (0);
+	}
+	b_written = write(STDOUT_FILENO, buffer, b_read);
+	
+	if (b_written == -1 || b_written != b_read)
+	{
+		close(file_desc);
+		free(buffer);
+		return (0);
+	}
+	close (file_desc);
+	free(buffer);
+	return (b_written);
 }
