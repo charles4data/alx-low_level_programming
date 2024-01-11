@@ -7,8 +7,6 @@
  * Return: new element address on success, NULL on fail.
  */
 
-
-
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	/* declare new node */
