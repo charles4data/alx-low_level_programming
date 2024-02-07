@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * ke_index - returns the index of as key
+ * key_index - returns the index of as key
  * @key: the key whose index is needed
  * @size: size of the array
  * Return: index of provided key
