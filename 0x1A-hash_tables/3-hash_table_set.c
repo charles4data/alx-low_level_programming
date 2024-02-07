@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_set - adds an element to an hash table
  * @ht: hash table to imputed with data
@@ -8,8 +7,8 @@
  * Return: 1 on success, 0 on failure.
  */
 
-
-int hash_table_set(hash_table_t *ht, const char *key, const char *value) {
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
 	hash_node_t *new_node, *temp;
 	unsigned long int index;
 
@@ -23,8 +22,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value) {
 	temp = ht->array[index];
 
 	/* Check if the key already exists in the linked list */
-	while (temp) {
-		if (strcmp(temp->key, key) == 0) {
+	while (temp)
+	{
+		if (strcmp(temp->key, key) == 0)
+		{
 			/* Free the old value */
 			free(temp->value);
 
@@ -43,12 +44,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value) {
 		return (0);
 
 	new_node->key = strdup(key);
-	if (new_node->key == NULL) {
+
+	if (new_node->key == NULL)
+	{
 		free(new_node);
 		return (0);
 	}
 	new_node->value = strdup(value);
-	if (new_node->value == NULL) {
+
+	if (new_node->value == NULL)
+	{
 		free(new_node->key);
 		free(new_node);
 		return (0);
