@@ -1,0 +1,7 @@
+# defining variables
+CC = gcc
+SRC = main.c school.c
+
+# Defining rules for making an executable
+all: $(SRC)
+	$(CC) $(SRC) -o school
