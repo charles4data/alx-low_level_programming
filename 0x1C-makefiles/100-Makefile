@@ -7,6 +7,9 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+# Declare phony targets (targets that are not files)
+.PHONY: all clean oclean fclean re
+
 # Rule to build the executable
 all: m.h $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
@@ -24,16 +27,3 @@ fclean: clean oclean
 
 # Rule for recompiling
 re: fclean all
-
-# Dependency generation
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-	@$(CC) -MM $< > $*.d
-
-# Include dependency files
--include $(SRC:.c=.d)
-
-# Check for missing header file
-ifeq ($(wildcard m.h),)
-$(error Header file m.h is missing)
-endif
