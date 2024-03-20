@@ -10,7 +10,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # defining rule for creating an executable
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) &(CFLAGS) $(OBJ) -o $(NAME)
 
 defining the rule for deleting temporary files
 clean:
