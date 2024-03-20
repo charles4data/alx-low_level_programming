@@ -1,0 +1,11 @@
+# Making a useful makefile
+
+# defining variables to use
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+# defining the rules
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
