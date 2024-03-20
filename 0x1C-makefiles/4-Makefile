@@ -1,0 +1,27 @@
+# making a make file
+
+# defining makefile variables
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# defining rule for creating an executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+defining the rule for deleting temporary files
+clean:
+	$(RM) *~ $(NAME)
+
+# defining rule for removing object files
+oclean:
+	$(RM) $(OBJ)
+
+# defining rule for cleaning all files
+fclean: clean oclean
+
+# defining rule for recompiling the executable
+re: fclean all
