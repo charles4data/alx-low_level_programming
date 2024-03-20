@@ -12,7 +12,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-defining the rule for deleting temporary files
+# defining the rule for deleting temporary files
 clean:
 	$(RM) *~ $(NAME)
 
